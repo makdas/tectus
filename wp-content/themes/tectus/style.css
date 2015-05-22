@@ -1,0 +1,187 @@
+/*
+Theme Name: Tectus
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tectus
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Tectus is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+
+/*imports*/
+@import url("bootstrap/css/bootstrap.min.css");
+
+/*builder normalise*/
+body .vc_row{ margin-left: auto; margin-right: auto}
+
+
+body{ font-size: 16px;}
+
+a, a:hover{ text-decoration: none;}
+
+/*layout*/
+#masthead{ position: relative; z-index: 1}
+#main .entry-content > .wpb_row{ margin: 0!important; padding:40px 0}
+
+
+/*nav*/
+.navbar{ border:none; margin-bottom: 0;}
+.navbar-nav>li>a{ padding: 50px 20px; font-size:18px; text-transform: uppercase; }
+.navbar-default{ border-bottom: 10px solid #0068B3; background: white}
+.navbar-default .navbar-nav>.active, .navbar-default .navbar-nav>li:hover, .navbar-default .navbar-nav>.current-page-ancestor{ background: #0068B3;}
+.navbar-default .navbar-nav>.active > a, .navbar-default .navbar-nav>.active:hover > a, .navbar-default .navbar-nav>li:hover > a,  .navbar-default .navbar-nav>.current-page-ancestor a{ color: white; background: none}
+
+
+
+.dropdown:hover .dropdown-menu {    display: block; }
+.dropdown-menu{ box-shadow: none; border-radius: 0; border: none; background: none; white-space: nowrap; background:#0068B3; }
+.dropdown-menu li{ display: inline-block;}
+.dropdown-menu li a, .dropdown-menu>.active>a{ color: white; padding:10px}
+.dropdown-menu li a:hover, .dropdown-menu>.active>a:hover{ background: none; color: white}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{ background: none}
+
+.dropwdownbg{ display:none;background: #0068B3; height: 20px; position: absolute; top:100%; margin-top: -10px; width: 100%}
+
+.header{ background: url(images/header.jpg) repeat-x; background-size: auto 100%; padding: 100px 0;}
+.headerinfo{ background: rgba(0,0,0,0.44); padding: 40px; display: inline-block; white-space: nowrap;}
+.headerinfo h2{ margin: 0; color: white; margin-bottom: 30px;}
+.headerinfo h3{ margin: 0; font-weight: bold; border-bottom: 5px solid #0068B3; display: inline-block; padding-right: 50px; padding-bottom: 10px; color: white}
+.headerinfo a{ display: inline-block; padding: 10px 20px; background: #0068B3; color: white; border: 2px solid #0068B3; position: relative; font-size:14px; top:0;transition: all 0.5s ease;}
+.headerinfo a:hover{ top: -10px}
+.headerinfo p a:first-child{ margin-right: 15px}
+.headerinfo p a:nth-child(2){ background: none; border: 2px solid white;}
+
+.heading h3{ margin: 0; font-weight: bold; border-bottom: 5px solid #0068B3; display: inline-block; padding-right: 50px; padding-bottom: 10px}
+
+/*buttons*/
+.bluebutton a{ display: inline-block; padding: 10px 20px;background: #0068B3; color: white; border: 2px solid #0068B3;}
+.bluebutton-invert a{ display: inline-block; padding: 10px 20px;background: none; color: #0068B3; border: 2px solid #0068B3;transition: all 0.5s ease;}
+.bluebutton-invert a:hover{ background: #0068B3; color: white; border: 2px solid #0068B3;}
+
+
+/*blocks*/
+
+.blocks > .wpb_column > .wpb_wrapper{ background: #ececec; padding: 10px; transition: all 0.5s ease; cursor: pointer;}
+.blocks > .wpb_column > .wpb_wrapper:hover{ background: #0067B2}
+.blocks .wpb_wrapper .box{ padding: 20px; padding-top: 180px;  border: 1px solid #ccc; display: block;}
+.blocks .wpb_wrapper .wpb_text_column{ margin: 0; min-height: 80px}
+.blocks .wpb_wrapper .wpb_text_column p{ color: #333}
+.blocks .wpb_wrapper { text-align: center;}
+.blocks .wpb_wrapper h3{ color: #0067B2; font-weight: bold;}
+
+.productrange .box{ background: white url(images/products_icon.png) no-repeat center 20px;}
+.abouttectus  .box{ background: white url(images/about_icon.png) no-repeat center 40px;}
+.contactus  .box{ background: white url(images/contact_icon.png) no-repeat center 40px;}
+
+
+.producticon1.firstgrade  .box{ background:url(images/1stegrade.png) no-repeat  105% -5%,white url(images/products2_icon.png) no-repeat center 20px;}
+.producticon1.secondgrade  .box{ background:url(images/2ndgrade.png) no-repeat  105% -5%,white url(images/products2_icon.png) no-repeat center 20px;}
+.producticon2.secondgrade  .box{ background:url(images/2ndgrade.png) no-repeat  105% -5%,white url(images/products3_icon.png) no-repeat center 60px;}
+
+
+
+
+.blocks.productrange .wpb_wrapper .box{ padding-top: 240px;}
+.blocks.productrange .wpb_wrapper .wpb_text_column{ min-height:0;}
+
+.bannerinfo { position: relative; padding: 40px 0 40px 180px; width: 86%; margin: auto}
+.bannerinfo h3{ font-weight: bold; max-width: 60%}
+.bannerinfo p{ max-width: 60%}
+.bannerinfo h4{ font-weight: bold; font-size: 20px; max-width: 60%}
+.bannerinfo.searchicon{ background: url(images/search.png) no-repeat ; background-position: center left;} 
+.bannerinfo.truckicon{ background: url(images/truck.png) no-repeat ; background-position: center left;} 
+.bannerinfo a{ position: absolute;; right: 0; top: 50%; display: inline-block; padding: 15px 24px;background: #0068B3; text-transform: uppercase; color: white; border: 2px solid #0068B3; margin-top: -22px;transition: all 0.5s ease;}
+.bannerinfo a:hover{ right: 20px}
+
+#main .entry-content .footerimage { padding: 150px 0}
+#main .entry-content .footerimage .footerimageinfo{ width: 80%; background: rgba(0,104,179,0.9); padding: 20px; margin: auto; color: white}
+
+.footerblocks{ background: #333; padding: 100px 0; color: white}
+.footerblocks h4{ text-transform: uppercase; font-weight: bold; border-bottom: 3px solid #0068B3; display: table-cell; vertical-align: bottom; height: 52px; padding-right: 100px; padding-bottom: 10px}
+.footerblocks .address .detail{ background: url(images/contact_icon2.png) no-repeat left 10px; padding: 20px 0 20px 50px}
+.footerblocks .contact .detail{ background: url(images/contact_icon3.png) no-repeat left 15px; padding: 10px 0 20px 70px}
+.footerblocks .contact .detail span{ display: inline-block; width:60px}
+
+#colophon{ background: #0068B3 }
+#colophon .copyright{ text-align: right; color: white; padding: 5px 0}
+
+.contactuspage h3{ margin: 0; font-weight: bold; border-bottom: 5px solid #0068B3; display: inline-block; padding-right: 50px; padding-bottom: 10px}
+.contactuspage .address{ background: url(images/contact_icon2.png) no-repeat left top; background-size: contain; padding-left: 80px }
+.contactuspage .telephone{ background: url(images/contact_icon3.png) no-repeat left top; background-size: auto 70%; padding-left: 80px }
+.contactuspage .emaildeets{ background: url(images/email.png) no-repeat left top; background-size: contain; padding-left: 80px }
+
+/*ninja-forms*/
+.ninja-forms-cont input[type="text"], .ninja-forms-cont textarea{ background: white; border: 1px solid #ddd; color: #666; padding: 10px 20px}
+.ninja-forms-cont .field-wrap, .ninja-forms-cont #ninja_forms_required_items{ margin-bottom: 5px}
+.ninja-forms-required-items{ display: none;}
+.ninja-forms-cont input[type="submit"]{ display: inline-block; padding: 10px 20px;background: #0068B3; color: white; border: 2px solid #0068B3;}
+.ninja-forms-response-msg{ padding: 5px;}
+.ninja-forms-error-msg, .ninja-forms-field-error{ background: #ffc6c6; padding: 5px; color: red}
+.ninja-forms-response-msg.ninja-forms-success-msg{ background: #bfe2b3; padding: 5px; color: green}
+.ninja-forms-field-error{ font-style: italic; font-size: 13px}
+.ninja-forms-field-error p{ margin: 0; padding: 0}
+
+
+
+/*product*/
+.product table{ width: 100%}
+.product{ margin-bottom: 20px; background: #eaeaea; padding: 10px;}
+.product .box{ background: white;}
+.product .boxpadding{ padding: 20px; }
+.product h3{ color:#0068B3; font-weight: bold; margin-top: 0 }
+.product .productinfo img{ max-width: 100%; height: auto}
+.product h4{ margin: 0; font-size: 14px}
+.product .extras{ padding: 20px; vertical-align: bottom; text-align: center; height: 50%; border-left: 10px solid #ececec}
+.product .extras2{ vertical-align: middle;}
+.product .firstextra{border-bottom: 10px solid #ececec}
+.product .extras img{ margin-bottom: 20px}
+
+.newsletter #mc_embed_signup form{ padding: 0; margin-top: 20px}
+.newsletter #mc_embed_signup .mc-field-group{ width: 100%}
+
+.newsletter #mc_embed_signup .mcbutton{ margin: 0; display: inline-block; padding: 10px 20px;background: #0068B3; color: white; border: 2px solid #0068B3; text-transform: uppercase;}
+.newsletter #mc_embed_signup .mc-field-group input{ color: #333}
+div.mce_inline_error{ font-weight: normal!important; font-style: italic; font-size: 13px}
+
+.newsletter  #mc_embed_signup div#mce-responses{ width: 100%; padding: 0; margin: 0; top: 0; margin-bottom: 20px}
+.newsletter  #mc_embed_signup div.response{ margin: 0; padding: 0; width: 100%; font-weight: normal; font-size: 13px}
+
+.enquireimg{ cursor: pointer;}
+
+.nav > .menu-item-language{ display: none;}
+
+
+
+
+@media screen and (max-width: 780px) {
+    .navbar-brand { height:80px;    }
+    .navbar-brand>img{ height: 100%; width: auto;}
+    .navbar-nav>li>a{ padding: 10px; border-bottom: 1px solid #ddd}
+
+    .navbar-nav>li>.dropdown-menu{ display: block; float: none; position:relative; background: none; width: 100%; padding: 0; margin: 0; border-bottom: 1px solid #ddd}
+    .navbar-nav>li>.dropdown-menu li{ display: block;}
+    .navbar-nav>li>.dropdown-menu li a{ color: #777; padding-left: 20px}
+     .navbar-nav>li:hover>.dropdown-menu li a{ color: white}
+    .dropwdownbg{ display: none!important;}
+
+    .banner{ display: none;}
+
+    .footerblocks{ padding: 50px 0}
+    .footerblocks .col-sm-4{ margin-bottom: 20px}
+    .vc_column_container{ margin-bottom: 20px}
+
+}
